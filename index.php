@@ -7,5 +7,6 @@ if ($output == "2") {
 	include "home.php";
 }
 */
+
 include "home.php";
 ?>

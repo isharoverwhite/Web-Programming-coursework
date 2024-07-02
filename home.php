@@ -1,5 +1,5 @@
 <?php 
-$title = "Q&A System Management";
+$title = "Q&A System";
 
 
 

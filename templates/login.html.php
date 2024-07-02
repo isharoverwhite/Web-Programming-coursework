@@ -3,85 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login to System</title>
-  <style type="text/css">
-    /* Base styles */
-    * {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
-      box-sizing: border-box; /* Ensures padding/margin don't affect width/height */
-    }
-
-    body {
-      background-color: #3A3A3A;
-      margin: 0; /* Remove default margin from body */
-      display: flex; /* Center form horizontally */
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh; /* Set minimum height for full viewport */
-    }
-
-    /* Login form styling */
-    #login_form {
-      margin: 0 auto; /* Center form within viewport */
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #f5f5f5;
-      width: 300px; /* Adjust width as needed */
-      opacity: 0.89; /* Adjust opacity as needed */
-    }
-
-    .login_input {
-      display: block; /* Makes each input occupy a full line */
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-bottom: 1px;
-    }
-
-    /* Password field and button styling */
-    #password {
-      margin-right: 5px; /* Add space before button */
-    }
-
-    #show_btn {
-      padding: 5px; /* Adjust padding for image */
-      border: none;
-      background-color: transparent; /* Remove default button styling */
-      cursor: pointer; /* Indicate clickable behavior */
-    }
-    
-    #login_btn {
-      display: block; /* Makes button occupy a full line */
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      background-color: #203be3;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    /* Link styling */
-    a {
-      text-decoration: none;
-      color: #203be3;
-    }
-
-    a:hover {
-      color: #000;
-    }
-
-    /* Placeholder text styling */
-    ::placeholder {
-      color: black;
-      opacity: 0.5;
-    }
-  </style>
+  <title>Q&A System - Login</title>
+  <link rel="stylesheet" type="text/css" href="..\styles\main.css">
+  <link rel="stylesheet" type="text/css" href="..\styles\login.css">
 </head>
 <body>
+  <header>
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/questions.php">Questions</a></li>
+          <li><a href="/answers.php">Answers</a></li>
+          <li><a href="/login.php">Login</a></li>
+      </ul>
+  </header>
+  <h1>Q&A System</h1><br>
+  <p>Born To Find Solution</p>
 
   <form action="login.php" method="post" id="login_form">
     <div>
@@ -92,7 +28,7 @@
       <div>
         <input id="password" type="password" name="password" class="login_input" placeholder="Password">
         <button id="show_btn" type="button">
-          <img src="eye.png" alt="Show Password" id="eyeIcon">
+          <img src="../images/show_password.png" alt="Show Password" id="eyeIcon">
         </button><br>
       </div>
     </div>
@@ -101,23 +37,27 @@
   </form>
   
   
-  <footer></footer>
 
   <script type="text/javascript">
     const button = document.getElementById('show_btn');
     const password = document.getElementById('password');
+    const eyeIcon = document.getElementById('eyeIcon');
 
     button.addEventListener('click', tooglePasswordVisibility);
 
     function tooglePasswordVisibility() {
       if (password.type === "password"){
         password.type = "text";
-        button.textContent = 'Hide password';
+        eyeIcon.src = "../images/hide_password.png";
       } else {
         password.type = 'password';
-        button.textContent = 'Show password';
+        eyeIcon.src = "../images/show_password.png";
       }
     }
   </script>
+  <div id="footer">
+    <footer>&copy;Copyright 2024, Zen & Ishar Studio</footer>
+  </div>
 </body>
+
 </html>
