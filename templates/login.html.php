@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-      <ul>
+      <ul id="main_menu">
           <li><a href="/">Home</a></li>
           <li><a href="/questions.php">Questions</a></li>
           <li><a href="/answers.php">Answers</a></li>
@@ -58,6 +58,8 @@
   <div id="footer">
     <footer>&copy;Copyright 2024, Zen & Ishar Studio</footer>
   </div>
+
 </body>
+
 
 </html>

@@ -8,13 +8,18 @@
 </head>
 <body>
 <header>
-	<ul>
+	<ul id="main_menu">
         <li><a href="/">Home</a></li>
     	<li><a href="questions.php">Questions</a></li>
         <li><a href="answers.php">Answers</a></li>
-        <li><a href="login.php">Login</a></li>
+        <li><a href="login.php">Login</a></li>	
     </ul>
 </header>
+
+
+
+
+
 
 
 <footer>&copy;Copyright 2024, Zen & Ishar Studio</footer>

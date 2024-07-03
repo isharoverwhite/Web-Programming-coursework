@@ -4,9 +4,9 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f5f5f5;
-    width: 300px; /* Adjust width as needed */
-    opacity: 0.89; /* Adjust opacity as needed */
+    width: 300px;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.9);
+    opacity: 0.89;
   }
 
   .login_input {
@@ -18,9 +18,14 @@
     margin-bottom: 1px;
   }
 
-  /* Password field and button styling */
+  input::placeholder {
+    font-weight: bold;
+    color: #000;
+    opacity: 0.2;
+  }
+
   #password {
-    margin-right: 5px; /* Add space before field */
+    margin-right: 5px; 
   }
 
   #show_btn {
@@ -28,6 +33,7 @@
     border: none;
     background-color: transparent; /* Remove default button styling */
     cursor: pointer; /* Indicate clickable behavior */
+    margin-right: 5px; /* Add space between input and button */
   }
 
   #eyeIcon {
@@ -45,6 +51,13 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+    opacity: 0.85;
+    transition: 0.3s;
+  }
+
+  #login_btn:hover {
+    opacity: 1;
+    background-color: #0022fc;
   }
 
   /* Link styling */

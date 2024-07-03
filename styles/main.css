@@ -1,12 +1,10 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
-    box-sizing: border-box; /* Ensures padding/margin don't affect width/height */
+    box-sizing: border-box;
   }
   header {
     position: fixed;
-    text-align: center;
     padding: 10px;
-    text-align: center;
     background-color: #333333;
     align-self: start;
     width: 100%;
@@ -14,7 +12,7 @@
 
   }
 
-  ul {
+  ul#main_menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,10 +29,13 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: 0.3s;
   }
 
   li a:hover {
-    color: white;
+    text-decoration: none;
+    color: #1877F2;
+    font-weight: bold;
   }
 
   h1 {
