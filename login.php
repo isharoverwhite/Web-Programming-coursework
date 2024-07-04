@@ -9,10 +9,10 @@ if ($output == "2") {
 	if (isset($_POST['login_btn'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$sql = "";
+		$sql = "FROM users WHERE username = '$username'";
 		$result = $conn->query($sql);
-		if ($result->num_rows > 0) {
-			$row = $result->fetch_assoc();
+		if ($result-> num_rows > 0) {
+			$row = $result-> fetch_assoc();
 			$_SESSION['username'] = $row['username'];
 			$_SESSION['password'] = $row['password'];
 			$_SESSION['username'] = $row['email'];

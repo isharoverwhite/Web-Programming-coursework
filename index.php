@@ -7,6 +7,6 @@ if ($output == "2") {
 	include "home.php";
 }
 */
-
-include "home.php";
+$title = "Q&A System";
+include "templates/layout.html.php";
 ?>

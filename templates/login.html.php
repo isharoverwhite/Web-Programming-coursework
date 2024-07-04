@@ -10,19 +10,19 @@
 <body>
   <header>
       <ul id="main_menu">
-          <li><a href="/">Home</a></li>
+          <li><a href="home.php">Home</a></li>
           <li><a href="/questions.php">Questions</a></li>
           <li><a href="/answers.php">Answers</a></li>
           <li><a href="/login.php">Login</a></li>
       </ul>
   </header>
-  <h1>Q&A System</h1><br>
-  <p>Born To Find Solution</p>
+  <h1 class='logo'>Q&A System</h1><br>
+  <p id='maxim'>Born To Find Solution</p>
 
   <form action="login.php" method="post" id="login_form">
     <div>
       <div>
-        <input type="text" name="username" class="login_input" autofocus="1" placeholder="Email Address or Username"><br>
+        <input type="text" name="username" class="login_input" placeholder="Email Address or Username"><br>
       </div>
 
       <div>
